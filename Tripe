@@ -1,0 +1,58 @@
+pacote  exe4
+
+classe  Tripe ( var  dobrado :  Booleano , var  alturaMinima :  Duplo , var  alturaMaxima :  Duplo ,
+            var  alturaAtual :  Double ) {
+    fun  definirAltura ( novaAltura :  Double ) {
+        alturaAtual = novaAltura
+    }
+
+     dobrar divertido () {
+        if ( ! dobrado) {
+            dobrado =  verdadeiro
+        }
+        println ( " dobrei " )
+    }
+
+    fun  desdobrar () {
+        if (dobrado) {
+            dobrado =  falso
+        }
+        println ( " desdobrei " )
+    }
+
+    divertido  guardar () {
+        if ( ! dobrado) {
+            dobrado =  verdadeiro
+        }
+        alturaAtual = alturaMinima
+        println ( " guardei " )
+
+    }
+
+    fun  prontoParaGuardar () :  Boolean {
+        if (dobrado && alturaAtual == alturaMinima) {
+            println ( " pronto para guardar " )
+            retorno  verdadeiro
+        }
+        println ( " não tá pronto pra guardar " )
+        retornar  falso
+
+    }
+
+    fun  usar () {
+        if ( ! dobrado) {
+            dobrado =  verdadeiro
+        }
+        alturaAtual = (alturaMaxima /  2 )
+        println ( " usando " )
+    }
+
+    fun  prontoParaUsar () :  Boolean {
+        if (dobrado && alturaAtual > (alturaMaxima /  2 )) {
+            println ( " pronto pra usar " )
+            retorno  verdadeiro
+        }
+        println ( " não tá pronto pra usar " )
+        retornar  falso
+    }
+}
