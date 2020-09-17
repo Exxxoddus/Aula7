@@ -1,0 +1,19 @@
+pacote  exe1
+
+classe  Conta ( var  numConta :  Int , var  saldo :  Double ,
+            val  titular :  Cliente ) {
+
+     depositar divertido ( valor : Double ) {
+        saldo + = valor
+        println ( " - deposito, novo saldo $ {saldo} " )
+    }
+
+    divertido  sacar ( valor : duplo ) {
+        if (valor > saldo) {
+            println ( " saldo insuficiente " )
+        } else {
+            saldo - = valor
+            println ( " - saque, novo saldo $ {saldo} " )
+        }
+    }
+}
