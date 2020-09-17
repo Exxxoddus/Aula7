@@ -1,0 +1,10 @@
+pacote  exe5
+
+classe  Concessionaria {
+    val registroDeVendas =  ArrayList < Venda > ()
+    fun  registrarVenda ( veiculo :  Veiculo , cliente :  Cliente , valor :  Double ) {
+        var novaVenda =  Venda (valor, veiculo, cliente)
+        registroDeVendas.add (novaVenda)
+        println ( " quantidade de vendas produzidas: $ {registroDeVendas.size} " )
+    }
+}
