@@ -1,0 +1,13 @@
+pacote  exe3
+
+class  Prova ( var  dificuldade :  Int , var  energiaNecessaria :  Int ) {
+    fun  podeRealizar ( atleta :  Atleta ) :  Boolean {
+        if (atleta.nivel > =  esta .dificuldade
+                && atleta.energia > = energiaNecessaria) {
+            println ( " parabenos " )
+            retorno  verdadeiro
+        }
+        println ( " faio " )
+        retornar  falso
+    }
+}
